@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+.container{
+  max-width:1920px;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header{
+  display:flex;
+  justify-content: center;
+  gap:40px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.header a{
+  font-size:28px;
+  color:black;
+  font-weight:bold;
+  line-height:150%;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color:blue;
+}
+
+.banner{
+  display:flex;
+  position:relative;
+}
+
+.banner img{
+  width: 50%;
+}
+
+
+.banner-text{
+  position:absolute;
+  top: 20%;
+  left:50%;
+}
+
+.banner-text h1{
+  font-size:120px;
+  font-weight:bold;
+  line-height: 150%;
+  color:blue;
+  margin-bottom: 12px;
+}
+
+.banner-text p{
+  font-size:28px;
+  font-weight:bold;
+  line-height:150%;
+  color:blue;
+}
+
+
+.content1{
+  display:flex;
+  align-items: center;
+  gap:24px;
+  padding-bottom: 80px;
+}
+
+.content1 img{
+  width: 50%;
+}
+
+.content1-text{
+  width: 50%;
+}
+
+.content2{
+max-width:1296px;
+margin: 0 auto;
+}
+
+.searchbar{
+  display:flex;
+  width: 50%;
+  gap:10px;
+  border:1px solid black;
+  border-radius:40px;
+  align-items: center;
+  padding: 16px;
+}
+
+.searchbar img{
+  width: 24px;
+  height: 24px;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 24 ;
+  padding-right: 24 auto;;
+  gap: 24px;
+ 
+}
+
+.card {
+  width: 416px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.card img {
+  width: 416px;
+  margin-bottom: 16px;
+}
+.date {
+  margin-bottom: 4px;
+  line-height: 150%;
+}
+
+.hashtag  {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hashtag a{
+  font-size: 24px;
+  color: blue;
+  font-weight: bold;
+  line-height: 150%;
+  text-decoration: none
+}
+
+.tag {
+  background: blue;
+  color: white;
+  font-size: 16px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.card h2 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+
+p {
+  line-height: 150%;
+  margin-bottom: 16px;
+   display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+}
+
+.btn {
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 40px;
+}
+
+.btn:hover {
+  text-decoration: none;
+  border: 1px solid black;
+  color: white;
+  background: black;
+}
+
+.footer{
+  display:flex;
+  justify-content:space-around;
+  background:#FBFBFB;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+.email{
+  font-size: 32px;
+  line-height: 150%;
+  font-weight: bold;
+  margin-right: 24px;
+}
+
+.contact-icon{
+  display: flex;
+  gap: 4px;
+}
+
+.royalty{
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
